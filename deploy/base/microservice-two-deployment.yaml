@@ -23,4 +23,4 @@ spec:
             - containerPort: 3000
           envFrom:
             - configMapRef:
-              name: microservice-one-config
+                name: microservice-one-config
