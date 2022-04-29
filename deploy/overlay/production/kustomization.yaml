@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: production
+nameSuffix: -prod
+resources:
+  - ../../base
+  - ./namespace.yaml
+  - ./ingress.yaml
+  - ./microservice-one-config-map.yaml
+replicas:
+  - count: 1
+    name: microservice-one-deployment-name
+images:
+  - name: microservice-one
+    newName: ghcr.io/dinoradulovic/k8s-microservice-one-production # {"$imagepolicy": "flux-system:k8s-microservices-app-staging:name"}
+    newTag: tmstp-1632245140 # {"$imagepolicy": "flux-system:k8s-microservices-app-staging:tag"}
+  - name: microservice-two
+    newName: ghcr.io/dinoradulovic/k8s-microservice-two-production # {"$imagepolicy": "flux-system:k8s-microservices-app-production:name"}
+    newTag: tmstp-1632245141 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}

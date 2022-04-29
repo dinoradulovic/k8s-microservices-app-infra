@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: microservice-one-config
+data:
+  APP_PORT: "3000"
+  SERVICE_TWO_URL: "http://microservice-two-service-name-prod:3000/microservice-two"

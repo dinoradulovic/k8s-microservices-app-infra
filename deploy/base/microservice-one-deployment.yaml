@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-one-deployment-name
+  labels:
+    app: microservice-one-deployment-label
+spec:
+  selector:
+    matchLabels:
+      app: microservice-one-pod-label
+  template:
+    metadata:
+      labels:
+        app: microservice-one-pod-label
+    spec:
+      imagePullSecrets:
+        - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
+      containers:
+        - name: microservice-one-container-name
+          image: microservice-one
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - secretRef:
+                name: microservice-one-secret-name
+            - configMapRef:
+                name: microservice-one-config
