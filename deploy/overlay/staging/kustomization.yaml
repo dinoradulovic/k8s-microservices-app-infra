@@ -13,7 +13,7 @@ replicas:
 images:
   - name: microservice-one
     newName: ghcr.io/dinoradulovic/k8s-microservice-one-staging # {"$imagepolicy": "flux-system:k8s-microservices-app-production:name"}
-    newTag: tmstp-1632245140 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}
+    newTag: tmstp-1651124674 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}
   - name: microservice-two
     newName: ghcr.io/dinoradulovic/k8s-microservice-two-staging # {"$imagepolicy": "flux-system:k8s-microservices-app-production:name"}
-    newTag: tmstp-1632245141 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}
+    newTag: tmstp-1651124996 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}
