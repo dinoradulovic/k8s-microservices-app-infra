@@ -1,0 +1,7 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: microservice-two-config
+data:
+  APP_PORT: "3000"

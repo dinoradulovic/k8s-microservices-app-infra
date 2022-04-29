@@ -15,9 +15,12 @@ spec:
         app: microservice-two-pod-label
     spec:
       imagePullSecrets:
-      - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
+        - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
       containers:
-      - name: microservice-two-container-name
-        image: microservice-two
-        ports:
-        - containerPort: 3000
+        - name: microservice-two-container-name
+          image: microservice-two
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+              name: microservice-one-config
