@@ -14,7 +14,7 @@ replicas:
 images:
   - name: microservice-one
     newName: ghcr.io/dinoradulovic/k8s-microservice-one-production # {"$imagepolicy": "flux-system:microservice-one-production:name"}
-    newTag: tmstp-1651124674 # {"$imagepolicy": "flux-system:microservice-one-production:tag"}
+    newTag: tmstp-1651300895 # {"$imagepolicy": "flux-system:microservice-one-production:tag"}
   - name: microservice-two
     newName: ghcr.io/dinoradulovic/k8s-microservice-two-production
     newTag: tmstp-1651124996
