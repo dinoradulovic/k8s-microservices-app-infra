@@ -17,4 +17,4 @@ images:
     newTag: tmstp-1651302655 # {"$imagepolicy": "flux-system:microservice-one-production:tag"}
   - name: microservice-two
     newName: ghcr.io/dinoradulovic/k8s-microservice-two-production # {"$imagepolicy": "flux-system:microservice-two-production:name"}
-    newTag: tmstp-1651302673 # {"$imagepolicy": "flux-system:microservice-two-production:tag"}
+    newTag: tmstp-1651319685 # {"$imagepolicy": "flux-system:microservice-two-production:tag"}
