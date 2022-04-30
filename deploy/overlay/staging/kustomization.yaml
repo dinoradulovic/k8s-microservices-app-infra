@@ -16,5 +16,5 @@ images:
     newName: ghcr.io/dinoradulovic/k8s-microservice-one-staging # {"$imagepolicy": "flux-system:microservice-one-staging:name"}
     newTag: tmstp-1651294870 # {"$imagepolicy": "flux-system:microservice-one-staging:tag"}
   - name: microservice-two
-    newName: ghcr.io/dinoradulovic/k8s-microservice-two-staging
-    newTag: tmstp-1651124996
+    newName: ghcr.io/dinoradulovic/k8s-microservice-two-staging # {"$imagepolicy": "flux-system:microservice-two-staging:name"}
+    newTag: tmstp-1651124996 # {"$imagepolicy": "flux-system:microservice-two-staging:tag"}
