@@ -13,7 +13,7 @@ replicas:
     name: microservice-one-deployment-name
 images:
   - name: microservice-one
-    newName: ghcr.io/dinoradulovic/k8s-microservice-one-production # {"$imagepolicy": "flux-system:k8s-microservices-app-production:name"}
+    newName: ghcr.io/dinoradulovic/k8s-microservice-one-staging # {"$imagepolicy": "flux-system:k8s-microservices-app-production:name"}
     newTag: tmstp-1651294870 # {"$imagepolicy": "flux-system:k8s-microservices-app-production:tag"}
   - name: microservice-two
     newName: ghcr.io/dinoradulovic/k8s-microservice-two-staging
