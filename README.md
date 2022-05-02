@@ -16,7 +16,7 @@ It is used by FluxCD as a single source of truth for all the infrastucture files
 
 FluxCD runs kustomize command in specified folders and applies it to the cluster. 
 
-Manifest files can also be applied to the cluster without FluxCD with kustomize. 
+Manifest files can also be applied to the cluster without FluxCD using [Kustomize](https://kustomize.io/) (it also comes as a built in tool with kubectl). 
 
 # Usage
 
