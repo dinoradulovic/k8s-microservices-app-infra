@@ -14,9 +14,13 @@ This repo is part of the bundle.
 Infrastructure manifest files used for deploying **k8s-microservices-app** into Kubernetes Cluster. 
 
 To view Resources run:
+
 ```kubectl kustomize deploy/overlay/staging```
+
 or with standalone kustomize:
+
 ```kustomize build deploy/overlay/staging```
 
 To apply Resources:
+
 ```kubectl apply -k deploy/overlay/staging```
