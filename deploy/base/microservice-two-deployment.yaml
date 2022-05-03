@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: microservice-two-pod
+      app: microservice-two
   template:
     metadata:
       labels:
-        app: microservice-two-pod
+        app: microservice-two
     spec:
       imagePullSecrets:
         - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
