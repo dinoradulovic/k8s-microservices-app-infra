@@ -11,4 +11,4 @@ spec:
   - port: 3000
     protocol: TCP
   selector:
-    app: microservice-one-pod
+    app: microservice-one
