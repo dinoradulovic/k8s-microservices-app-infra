@@ -10,7 +10,7 @@ resources:
   - ./microservice-two-config-map.yaml
 replicas:
   - count: 1
-    name: microservice-one-deployment
+    name: microservice-one
 images:
   - name: microservice-one
     newName: ghcr.io/dinoradulovic/k8s-microservice-one-staging # {"$imagepolicy": "flux-system:microservice-one-staging:name"}
