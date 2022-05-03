@@ -8,16 +8,16 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: microservice-two
+      app: microservice-two-pod
   template:
     metadata:
       labels:
-        app: microservice-two
+        app: microservice-two-pod
     spec:
       imagePullSecrets:
         - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
       containers:
-        - name: microservice-two
+        - name: microservice-two-container
           image: microservice-two
           ports:
             - containerPort: 3000
