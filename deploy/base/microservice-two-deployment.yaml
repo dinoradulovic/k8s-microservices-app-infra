@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice-two-deployment
+  name: microservice-two
   labels:
-    app: microservice-two-deployment
+    app: microservice-two
 spec:
   replicas: 1
   selector:
