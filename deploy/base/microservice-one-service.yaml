@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: microservice-one-service-name
+  name: microservice-one-service
   labels:
-    app: microservice-one-service-label
+    app: microservice-one-service
 spec:
   type: NodePort
   ports:
   - port: 3000
     protocol: TCP
   selector:
-    app: microservice-one-pod-label
+    app: microservice-one-pod

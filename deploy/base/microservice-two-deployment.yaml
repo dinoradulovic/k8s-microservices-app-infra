@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: microservice-two-deployment-name
+  name: microservice-two-deployment
   labels:
-    app: microservice-two-deployment-label
+    app: microservice-two-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: microservice-two-pod-label
+      app: microservice-two-podl
   template:
     metadata:
       labels:
-        app: microservice-two-pod-label
+        app: microservice-two-pod
     spec:
       imagePullSecrets:
         - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
       containers:
-        - name: microservice-two-container-name
+        - name: microservice-two-container
           image: microservice-two
           ports:
             - containerPort: 3000

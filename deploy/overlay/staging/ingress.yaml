@@ -16,7 +16,7 @@ spec:
         paths:
           - backend:
               service:
-                name: microservice-one-service-name-staging
+                name: microservice-one-service-staging
                 port: 
                   number: 3000
             path: /*
@@ -26,7 +26,7 @@ spec:
         paths:
           - backend:
               service:
-                name: microservice-two-service-name-staging
+                name: microservice-two-service-staging
                 port: 
                   number: 3000
             path: /*
