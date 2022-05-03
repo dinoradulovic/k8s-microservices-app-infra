@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
         - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
       containers:
-        - name: microservice-two-container
+        - name: microservice-two
           image: microservice-two
           ports:
             - containerPort: 3000

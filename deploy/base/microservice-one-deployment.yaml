@@ -8,16 +8,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: microservice-one-pod
+      app: microservice-one
   template:
     metadata:
       labels:
-        app: microservice-one-pod
+        app: microservice-one
     spec:
       imagePullSecrets:
         - name: iemFHvTS1in+I60kJs6mMqEEDqHnu8P3EVHKEA8r
       containers:
-        - name: microservice-one-container
+        - name: microservice-one
           image: microservice-one
           ports:
             - containerPort: 3000
